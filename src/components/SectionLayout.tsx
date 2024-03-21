@@ -8,7 +8,7 @@ export default function SectionLayout({
 }) {
   return (
     <>
-      <Box width={["100%", "80%"]} mx="auto">
+      <Box width={["100%", "80%"]} mx="auto" paddingBottom={10}>
         {children}
       </Box>
     </>
