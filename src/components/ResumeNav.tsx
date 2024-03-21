@@ -1,5 +1,5 @@
-import { Button, Flex, HStack, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Flex, HStack } from "@chakra-ui/react";
+import React from "react";
 import Divider from "./Divider";
 import LinkButton from "./LinkButton";
 
