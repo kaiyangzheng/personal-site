@@ -1,16 +1,12 @@
 import * as React from "react";
-import { Box, Flex, HStack } from "@chakra-ui/react";
-import useWindowDimensions from "../hooks/useDimensions";
+import { Flex } from "@chakra-ui/react";
+import { useMediaQuery } from "usehooks-ts";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <>
-      <Flex
-        maxWidth={["100%", "80%"]}
-        mx="auto"
-        justifyContent="center"
-        flexDir={"column"}
-      >
+      <Flex maxWidth="80%" mx="auto" justifyContent="center" flexDir={"column"}>
         {children}
       </Flex>
     </>
